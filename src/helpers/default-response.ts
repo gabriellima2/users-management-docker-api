@@ -6,5 +6,5 @@ type DefaultResponseParams = {
 }
 
 export function defaultResponse(res: Response, params: DefaultResponseParams) {
-  res.status(params.status).contentType("application/json").json(JSON.stringify(params.body));
+  res.status(params.status).contentType("application/json").json(params.body);
 }
